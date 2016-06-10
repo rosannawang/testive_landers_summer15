@@ -205,6 +205,25 @@ body .hs-button.primary:hover, body input[type="submit"]:hover, body input[type=
 .summer15-news-icons {
   padding: 25px 25px 50px 25px; }
 
+.summer15-footer-links {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  padding: 0% 15%; }
+
+a {
+  color: white;
+  text-decoration: underline; }
+
 .summer15-logo {
   display: flex;
   margin: 0 auto; }
@@ -247,6 +266,23 @@ body .hs-button.primary:hover, body input[type="submit"]:hover, body input[type=
 @media only screen and (max-width: 808px) {
   .summer15-hero-content-signup-subheader {
     font-size: 14px; } }
+@media only screen and (max-width: 700px) {
+  .summer15-footer-links {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column; }
+
+  .summer15-logo {
+    padding: 10px 0px;
+    order: 1; }
+
+  a {
+    padding-bottom: 10px; } }
 @media only screen and (max-width: 785px) {
   .summer15-hero {
     height: 790px; }

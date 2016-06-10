@@ -243,10 +243,24 @@ body .hs-button.primary:hover,body input[type="submit"]:hover,body input[type="b
     padding: 25px 25px 50px 25px;
 }
 
+.summer15-footer-links {
+    @include flex;
+    @include flex-direction(row);
+    @include flex-align-items(center);
+    padding: 0% 15%;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
 .summer15-logo {
     display: flex;
     margin: 0 auto;
 }
+
+
 
 @media only screen and (max-width: 985px) {
     .summer15-hero-header-text {
@@ -290,6 +304,20 @@ body .hs-button.primary:hover,body input[type="submit"]:hover,body input[type="b
 @media only screen and (max-width: 808px) {
     .summer15-hero-content-signup-subheader {
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .summer15-footer-links {
+        @include flex;
+        @include flex-direction(column);
+    }
+    .summer15-logo {
+        padding: 10px 0px;
+        order: 1;
+    }
+    a {
+        padding-bottom: 10px;
     }
 }
 
