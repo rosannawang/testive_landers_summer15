@@ -1,273 +1,23 @@
 /* flexbox mixins */
-/* styles for testive summer15 */
-.summer15-page {
-  color: white;
+.cat-lander-page {
+  color: black;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.5; }
-
-.summer15-hero {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  background-color: #4d8bb6;
-  height: 650px; }
-
-.summer15-hero-image {
-  height: inherit;
-  position: absolute;
-  width: 100vw;
-  z-index: 1; }
-
-.summer15-hero-header {
-  text-align: center; }
-
-.summer15-hero-header-text {
-  font-size: 42px;
-  font-weight: 700;
-  position: absolute;
-  top: 45px;
-  width: 100%;
-  z-index: 2; }
-
-.summer15-hero-subheader-text {
-  border-bottom: 1px solid #ffffff;
-  color: #053786;
-  font-size: 28px;
-  font-weight: 700;
-  padding-bottom: 45px;
-  position: absolute;
-  top: 127px;
-  width: 100%;
-  z-index: 2; }
-
-.summer15-hero-content {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  -moz-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  -moz-justify-content: center;
-  justify-content: center;
-  position: absolute;
-  top: 260px;
-  width: 100%;
-  z-index: 2; }
-
-.summer15-hero-content-benefits {
-  padding-right: 30px;
-  padding-left: 20px; }
-
-.summer15-hero-content-benefits-header {
-  color: #053786;
-  font-size: 28px;
-  font-weight: 700;
-  padding-bottom: 10px;
-  text-align: center; }
-
-.summer15-hero-content-benefits-list {
-  max-width: 400px;
-  position: relative; }
-  .summer15-hero-content-benefits-list li:before {
-    background-image: url("../images/checkmark-white.svg");
-    background-size: contain;
-    content: '';
-    height: 13px;
-    left: 0px;
-    margin-top: 10px;
-    position: absolute;
-    width: 13px; }
-
-.summer15-list-item {
-  max-width: 400px;
-  position: relative;
-  margin: 0 auto;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  position: relative;
-  font-size: 20px; }
-  .summer15-list-item li:before {
-    background-image: url("../images/checkmark-white.svg");
-    background-size: contain;
-    content: '';
-    height: 13px;
-    left: 0px;
-    margin-top: 10px;
-    position: absolute;
-    width: 13px; }
-
-.summer15-highlight {
-  font-size: 23px;
-  font-weight: 700; }
-
-.summer15-blue {
-  color: #053786; }
-
-.summer15-hero-content-signup {
-  padding-left: 30px;
-  padding-right: 20px;
-  text-align: center; }
-
-.summer15-hero-content-signup-header {
-  color: #053786;
-  font-size: 28px;
-  font-weight: 700;
-  padding-bottom: 10px; }
-
-.summer15-hero-content-signup-subheader {
-  font-size: 20px;
-  font-style: italic;
-  padding-bottom: 10px; }
-
-.hs-form label {
-  color: #ffffff;
   font-size: 14px;
-  font-weight: 700;
-  padding-bottom: 5px; }
-
-.hs-form input {
-  border-radius: 5px;
-  border-style: none;
-  font-family: 'Roboto',sans-serif;
-  margin-bottom: 10px;
-  padding: 7px;
-  width: 250px; }
-
-.hs-form select {
-  border-radius: 5px;
-  border-style: none;
-  font-family: 'Roboto',sans-serif;
-  height: 27px;
-  margin-bottom: 10px;
-  padding: 10px;
-  width: 264px; }
-
-body .hs-button.primary, body input[type="submit"], body input[type="button"] {
-  background-color: #053786;
-  border-style: none;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  margin-top: 10px;
-  padding: 7px;
-  text-transform: uppercase;
-  width: 50%; }
-
-body .hs-button.primary:hover, body input[type="submit"]:hover, body input[type="button"]:hover {
-  cursor: pointer; }
-
-.submitted-message {
-  border-bottom: 2px dotted rgba(255, 255, 255, 0.2);
-  border-top: 2px dotted rgba(255, 255, 255, 0.2);
-  color: #fff;
-  font-size: 24px;
-  padding: 20px 0; }
-
-.summer15-footer {
-  background-color: #2c3e50;
-  padding: 50px 0px; }
-
-.summer15-news-header {
-  color: #f7931E;
-  font-size: 26px;
-  font-weight: 700;
-  text-align: center; }
-
-.summer15-news-icons-row {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  -moz-align-items: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  -moz-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  -moz-justify-content: center;
-  justify-content: center; }
-
-.summer15-news-icons {
-  padding: 25px 25px 50px 25px; }
-
-.summer15-footer-links {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  -moz-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  -moz-align-items: center;
-  align-items: center;
-  padding: 0% 15%; }
-
-a {
-  color: white;
-  text-decoration: underline; }
-
-.summer15-logo {
-  display: flex;
-  margin: 0 auto; }
-
-@media only screen and (max-width: 985px) {
-  .summer15-hero-header-text {
-    font-size: 30px;
-    top: 55px; }
-
-  .summer15-hero-subheader-text {
-    font-size: 25px;
-    top: 127px; }
-
-  .summer15-hero-content-benefits {
-    padding-right: 0px;
-    padding-left: 10px; }
-
-  .summer15-hero-content-benefits-header {
-    font-size: 25px; }
-
-  .summer15-list-item {
-    font-size: 18px; }
-
-  .summer15-highlight {
-    font-size: 20px; }
-
-  .summer15-hero-content-signup {
-    padding-left: 0px;
-    padding-right: 10px; }
-
-  .summer15-hero-content-signup-header {
-    font-size: 25px; }
-
-  .summer15-hero-content-signup-subheader {
-    font-size: 16px; }
-
-  .summer15-news-icons {
-    max-height: 18px;
-    padding: 25px 10px 50px 10px; } }
-@media only screen and (max-width: 808px) {
-  .summer15-hero-content-signup-subheader {
-    font-size: 14px; } }
-@media only screen and (max-width: 700px) {
-  .summer15-footer-links {
+  line-height: 1.5;
+  text-align: center;
+  max-width: 450px;
+  background-color: #2c3e50; }
+  .cat-lander-page .cat-lander-hero {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    background-color: white; }
+  .cat-lander-page .cat-lander-left {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: -moz-flex;
@@ -276,27 +26,19 @@ a {
     -ms-flex-direction: column;
     -moz-flex-direction: column;
     flex-direction: column; }
-
-  .summer15-logo {
-    padding: 10px 0px;
-    order: 1; }
-
-  a {
-    padding-bottom: 10px; } }
-@media only screen and (max-width: 785px) {
-  .summer15-hero {
-    height: 790px; }
-
-  .summer15-hero-header-text {
-    font-size: 24px;
-    top: 35px; }
-
-  .summer15-hero-subheader-text {
-    font-size: 20px;
-    top: 90px;
-    padding-bottom: 25px; }
-
-  .summer15-hero-content {
+  .cat-lander-page .cat-lander-hero-logo {
+    width: 75px;
+    padding: 10px 0px 10px 5px; }
+  .cat-lander-page .cat-lander-photo {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-align-self: flex-end;
+    -ms-align-self: flex-end;
+    -moz-align-self: flex-end;
+    align-self: flex-end; }
+  .cat-lander-page .cat-lander-copy {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: -moz-flex;
@@ -305,119 +47,50 @@ a {
     -ms-flex-direction: column;
     -moz-flex-direction: column;
     flex-direction: column;
-    top: 175px; }
-
-  .summer15-hero-content-benefits-list {
-    padding: 0% 25%; }
-
-  .summer15-list-item {
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    padding: 10px 20px 10px 0px; }
+  .cat-lander-page .cat-lander-orange {
+    color: #f7931e; }
+  .cat-lander-page .cat-lander-copy-header {
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 5px; }
+  .cat-lander-page .cat-lander-copy-subheader {
+    padding-bottom: 10px;
+    font-size: 14px; }
+  .cat-lander-page .cat-lander-copy-cta-text {
+    padding-bottom: 10px;
+    font-weight: 700;
     font-size: 16px; }
-
-  .summer15-highlight {
-    font-size: 18px; }
-
-  .summer15-hero-content-benefits {
-    order: 2; }
-
-  .summer15-hero-content-benefits-header {
-    padding-top: 15px;
-    font-size: 22px; }
-
-  .summer15-hero-content-signup {
-    order: 1; }
-
-  .summer15-hero-content-signup-header {
-    font-size: 22px; }
-
-  body .hs-button.primary, body input[type="submit"], body input[type="button"] {
-    width: 25%; }
-
-  .summer15-news-header {
-    font-size: 20px; }
-
-  .summer15-news-icons {
-    max-height: 14px;
-    padding: 25px 1px 50px 1px; }
-
-  .summer15-logo {
-    max-width: 150px; } }
-@media only screen and (max-width: 600px) {
-  .summer15-hero-header-text {
-    font-size: 20px;
-    top: 35px; }
-
-  .summer15-hero-subheader-text {
+  .cat-lander-page .cat-lander-cta-button {
+    background-color: #f7931e;
+    border: solid 2px #f7931e;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 5px 10px;
+    text-align: center;
+    width: 100px; }
+  .cat-lander-page .cat-lander-photo {
+    max-width: 140px;
+    height: 250px; }
+  .cat-lander-page .cat-lander-footer {
+    background-color: #2c3e50; }
+  .cat-lander-page .cat-lander-footer-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #f7931E;
     font-size: 18px;
-    top: 90px;
-    padding-bottom: 15px; }
-
-  .summer15-hero-content-benefits-list {
-    padding: 0% 15%; }
-
-  .summer15-news-header {
-    display: none; }
-
-  .summer15-news-icons {
-    display: none; } }
-@media only screen and (max-width: 440px) {
-  .summer15-hero {
-    height: 730px; }
-
-  .summer15-hero-header-text {
-    font-size: 18px;
-    top: 35px; }
-
-  .summer15-hero-subheader-text {
-    font-size: 17px;
-    top: 80px;
-    padding-bottom: 15px; }
-
-  .summer15-hero-content {
-    top: 160px; }
-
-  .summer15-hero-content-signup-header {
-    font-size: 17px; }
-
-  .summer15-hero-content-benefits-header {
-    padding-top: 15px;
-    font-size: 17px; }
-
-  .hs-form input {
-    width: 200px; }
-
-  .hs-form select {
-    width: 214px; }
-
-  body .hs-button.primary, body input[type="submit"], body input[type="button"] {
-    width: 35%; }
-
-  .summer15-list-item {
-    font-size: 15px; }
-
-  .summer15-highlight {
-    font-size: 16px; } }
-@media only screen and (max-width: 410px) {
-  .summer15-hero-header-text {
-    padding-right: 5px; } }
-@media only screen and (max-width: 394px) {
-  .summer15-hero-subheader-text {
-    top: 100px;
-    padding-bottom: 10px; }
-
-  .summer15-hero-content {
-    top: 175px; }
-
-  .summer15-hero-content-benefits-list {
-    padding: 0% 5%; } }
-@media only screen and (max-width: 360px) {
-  .summer15-hero {
-    height: 810px; }
-
-  .summer15-hero-content-benefits-list {
-    padding: 0% 5%; }
-
-  .summer15-hero-subheader-text {
-    padding-right: 10px; }
-
-  body .hs-button.primary, body input[type="submit"], body input[type="button"] {
-    width: 45%; } }
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding: 15px 5px;
+    text-align: center; }
+  .cat-lander-page .cat-lander-news-icons {
+    padding: 0px 5px 5px 10px; }
+  .cat-lander-page .summer15-logo {
+    padding: 15px; }
